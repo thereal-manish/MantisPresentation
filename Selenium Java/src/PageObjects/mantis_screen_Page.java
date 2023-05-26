@@ -1086,32 +1086,276 @@ public void click_unused(){
 		unused.click();
 }
 
-@FindBy(how= How.ID, using = "Craete_account")
-	public static WebElement Craete_account;
+@FindBy(how= How.ID, using = "CA_username")
+	public static WebElement CA_username;
 
-public void verify_Craete_account_Status(String data){
-		//Verifies the Status of the Craete_account
+public void verify_CA_username(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(CA_username.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_CA_username_Status(String data){
+		//Verifies the Status of the CA_username
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Craete_account.isEnabled());
+				Assert.assertTrue(CA_username.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Craete_account.isDisplayed());
+				Assert.assertTrue(CA_username.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Craete_account.isDisplayed());
+				Assert.assertFalse(!CA_username.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Craete_account.isEnabled());
+				Assert.assertFalse(!CA_username.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Craete_account(){
-		Craete_account.click();
+public void set_CA_username(String data){
+		CA_username.clear();
+		CA_username.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "CA_realname")
+	public static WebElement CA_realname;
+
+public void verify_CA_realname(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(CA_realname.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_CA_realname_Status(String data){
+		//Verifies the Status of the CA_realname
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(CA_realname.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(CA_realname.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!CA_realname.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!CA_realname.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_CA_realname(String data){
+		CA_realname.clear();
+		CA_realname.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "CA_Email")
+	public static WebElement CA_Email;
+
+public void verify_CA_Email(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(CA_Email.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_CA_Email_Status(String data){
+		//Verifies the Status of the CA_Email
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(CA_Email.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(CA_Email.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!CA_Email.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!CA_Email.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_CA_Email(String data){
+		CA_Email.clear();
+		CA_Email.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "CA_Enable")
+	public static WebElement CA_Enable;
+
+public void verify_CA_Enable(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(CA_Enable.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_CA_Enable_Status(String data){
+		//Verifies the Status of the CA_Enable
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(CA_Enable.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(CA_Enable.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!CA_Enable.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!CA_Enable.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void select_CA_Enable(String data){
+		if(CA_Enable.isSelected());
+			CA_Enable.click();
+}
+
+@FindBy(how= How.ID, using = "CA_Protected")
+	public static WebElement CA_Protected;
+
+public void verify_CA_Protected(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(CA_Protected.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_CA_Protected_Status(String data){
+		//Verifies the Status of the CA_Protected
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(CA_Protected.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(CA_Protected.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!CA_Protected.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!CA_Protected.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void select_CA_Protected(String data){
+		if(CA_Protected.isSelected());
+			CA_Protected.click();
+}
+
+@FindBy(how= How.ID, using = "AcessLevel_CA")
+	public static WebElement AcessLevel_CA;
+
+public void verify_AcessLevel_CA(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(AcessLevel_CA.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_AcessLevel_CA_Status(String data){
+		//Verifies the Status of the AcessLevel_CA
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(AcessLevel_CA.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(AcessLevel_CA.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!AcessLevel_CA.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!AcessLevel_CA.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void select_AcessLevel_CA(String data){
+		Select dropdown= new Select(AcessLevel_CA);
+		 dropdown.selectByVisibleText(data);
+}
+
+@FindBy(how= How.ID, using = "Createuser_CA")
+	public static WebElement Createuser_CA;
+
+public void verify_Createuser_CA_Status(String data){
+		//Verifies the Status of the Createuser_CA
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Createuser_CA.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Createuser_CA.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Createuser_CA.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Createuser_CA.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Createuser_CA(){
+		Createuser_CA.click();
+}
+
+@FindBy(how= How.ID, using = "Craete_account_Ma")
+	public static WebElement Craete_account_Ma;
+
+public void verify_Craete_account_Ma_Status(String data){
+		//Verifies the Status of the Craete_account_Ma
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Craete_account_Ma.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Craete_account_Ma.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Craete_account_Ma.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Craete_account_Ma.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Craete_account_Ma(){
+		Craete_account_Ma.click();
 }
 
 @FindBy(how= How.ID, using = "Hide_Inactive")
@@ -1685,87 +1929,87 @@ public void click_View_Status_HL(){
 }
 
 @FindBy(how= How.XPATH, using = "//button[normalize-space()='Create New Project']")
-	public static WebElement Create_Projects;
+	public static WebElement Create_Projects_MP;
 
-public void verify_Create_Projects_Status(String data){
-		//Verifies the Status of the Create_Projects
+public void verify_Create_Projects_MP_Status(String data){
+		//Verifies the Status of the Create_Projects_MP
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Create_Projects.isEnabled());
+				Assert.assertTrue(Create_Projects_MP.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Create_Projects.isDisplayed());
+				Assert.assertTrue(Create_Projects_MP.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Create_Projects.isDisplayed());
+				Assert.assertFalse(!Create_Projects_MP.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Create_Projects.isEnabled());
+				Assert.assertFalse(!Create_Projects_MP.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Create_Projects(){
-		Create_Projects.click();
+public void click_Create_Projects_MP(){
+		Create_Projects_MP.click();
 }
 
-@FindBy(how= How.ID, using = "Edit")
-	public static WebElement Edit;
+@FindBy(how= How.ID, using = "Edit_GC")
+	public static WebElement Edit_GC;
 
-public void verify_Edit_Status(String data){
-		//Verifies the Status of the Edit
+public void verify_Edit_GC_Status(String data){
+		//Verifies the Status of the Edit_GC
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Edit.isEnabled());
+				Assert.assertTrue(Edit_GC.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Edit.isDisplayed());
+				Assert.assertTrue(Edit_GC.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Edit.isDisplayed());
+				Assert.assertFalse(!Edit_GC.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Edit.isEnabled());
+				Assert.assertFalse(!Edit_GC.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Edit(){
-		Edit.click();
+public void click_Edit_GC(){
+		Edit_GC.click();
 }
 
-@FindBy(how= How.ID, using = "Delete")
-	public static WebElement Delete;
+@FindBy(how= How.ID, using = "Delete_GC")
+	public static WebElement Delete_GC;
 
-public void verify_Delete_Status(String data){
-		//Verifies the Status of the Delete
+public void verify_Delete_GC_Status(String data){
+		//Verifies the Status of the Delete_GC
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Delete.isEnabled());
+				Assert.assertTrue(Delete_GC.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Delete.isDisplayed());
+				Assert.assertTrue(Delete_GC.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Delete.isDisplayed());
+				Assert.assertFalse(!Delete_GC.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Delete.isEnabled());
+				Assert.assertFalse(!Delete_GC.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Delete(){
-		Delete.click();
+public void click_Delete_GC(){
+		Delete_GC.click();
 }
 
 @FindBy(how= How.ID, using = "Text_global_categories_textbox")
@@ -1804,60 +2048,60 @@ public void set_Text_global_categories_textbox(String data){
 		Text_global_categories_textbox.sendKeys(data);
 }
 
-@FindBy(how= How.ID, using = "Add_Category")
-	public static WebElement Add_Category;
+@FindBy(how= How.ID, using = "Add_Category_GC")
+	public static WebElement Add_Category_GC;
 
-public void verify_Add_Category_Status(String data){
-		//Verifies the Status of the Add_Category
+public void verify_Add_Category_GC_Status(String data){
+		//Verifies the Status of the Add_Category_GC
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Add_Category.isEnabled());
+				Assert.assertTrue(Add_Category_GC.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Add_Category.isDisplayed());
+				Assert.assertTrue(Add_Category_GC.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Add_Category.isDisplayed());
+				Assert.assertFalse(!Add_Category_GC.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Add_Category.isEnabled());
+				Assert.assertFalse(!Add_Category_GC.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Add_Category(){
-		Add_Category.click();
+public void click_Add_Category_GC(){
+		Add_Category_GC.click();
 }
 
-@FindBy(how= How.ID, using = "Add_and_Edit_Category")
-	public static WebElement Add_and_Edit_Category;
+@FindBy(how= How.ID, using = "Add_and_Edit_Category_GC")
+	public static WebElement Add_and_Edit_Category_GC;
 
-public void verify_Add_and_Edit_Category_Status(String data){
-		//Verifies the Status of the Add_and_Edit_Category
+public void verify_Add_and_Edit_Category_GC_Status(String data){
+		//Verifies the Status of the Add_and_Edit_Category_GC
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Add_and_Edit_Category.isEnabled());
+				Assert.assertTrue(Add_and_Edit_Category_GC.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Add_and_Edit_Category.isDisplayed());
+				Assert.assertTrue(Add_and_Edit_Category_GC.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Add_and_Edit_Category.isDisplayed());
+				Assert.assertFalse(!Add_and_Edit_Category_GC.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Add_and_Edit_Category.isEnabled());
+				Assert.assertFalse(!Add_and_Edit_Category_GC.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Add_and_Edit_Category(){
-		Add_and_Edit_Category.click();
+public void click_Add_and_Edit_Category_GC(){
+		Add_and_Edit_Category_GC.click();
 }
 
 @FindBy(how= How.ID, using = "Manage_Tags")
@@ -1958,32 +2202,32 @@ public void click_Dont_Care(){
 		Dont_Care.click();
 }
 
-@FindBy(how= How.ID, using = "Create_Tags")
-	public static WebElement Create_Tags;
+@FindBy(how= How.ID, using = "Create_Tags_T")
+	public static WebElement Create_Tags_T;
 
-public void verify_Create_Tags_Status(String data){
-		//Verifies the Status of the Create_Tags
+public void verify_Create_Tags_T_Status(String data){
+		//Verifies the Status of the Create_Tags_T
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Create_Tags.isEnabled());
+				Assert.assertTrue(Create_Tags_T.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Create_Tags.isDisplayed());
+				Assert.assertTrue(Create_Tags_T.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Create_Tags.isDisplayed());
+				Assert.assertFalse(!Create_Tags_T.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Create_Tags.isEnabled());
+				Assert.assertFalse(!Create_Tags_T.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Create_Tags(){
-		Create_Tags.click();
+public void click_Create_Tags_T(){
+		Create_Tags_T.click();
 }
 
 @FindBy(how= How.ID, using = "Last_Updated_HL")
@@ -2114,320 +2358,132 @@ public void set_Tag_Description(String data){
 		Tag_Description.sendKeys(data);
 }
 
-@FindBy(how= How.XPATH, using = "//input[@id='project-name']")
-	public static WebElement projectnameTX;
+@FindBy(how= How.ID, using = "Create_Tags_CT")
+	public static WebElement Create_Tags_CT;
 
-public void verify_projectnameTX(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(projectnameTX.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_projectnameTX_Status(String data){
-		//Verifies the Status of the projectnameTX
+public void verify_Create_Tags_CT_Status(String data){
+		//Verifies the Status of the Create_Tags_CT
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(projectnameTX.isEnabled());
+				Assert.assertTrue(Create_Tags_CT.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(projectnameTX.isDisplayed());
+				Assert.assertTrue(Create_Tags_CT.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!projectnameTX.isDisplayed());
+				Assert.assertFalse(!Create_Tags_CT.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!projectnameTX.isEnabled());
+				Assert.assertFalse(!Create_Tags_CT.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void set_projectnameTX(String data){
-		projectnameTX.clear();
-		projectnameTX.sendKeys(data);
+public void click_Create_Tags_CT(){
+		Create_Tags_CT.click();
+}
+
+@FindBy(how= How.XPATH, using = "//input[@id='project-name']")
+	public static WebElement projectnameCNP;
+
+public void verify_projectnameCNP(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(projectnameCNP.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_projectnameCNP_Status(String data){
+		//Verifies the Status of the projectnameCNP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(projectnameCNP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(projectnameCNP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!projectnameCNP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!projectnameCNP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_projectnameCNP(String data){
+		projectnameCNP.clear();
+		projectnameCNP.sendKeys(data);
 }
 
 @FindBy(how= How.XPATH, using = "//textarea[@id='project-description']")
-	public static WebElement Description;
+	public static WebElement Description_CNP;
 
-public void verify_Description(String data){
+public void verify_Description_CNP(String data){
 		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(Description.getAttribute("value"),data);
+		Assert.assertEquals(Description_CNP.getAttribute("value"),data);
 	}
 
 }
 
-public void verify_Description_Status(String data){
-		//Verifies the Status of the Description
+public void verify_Description_CNP_Status(String data){
+		//Verifies the Status of the Description_CNP
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Description.isEnabled());
+				Assert.assertTrue(Description_CNP.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Description.isDisplayed());
+				Assert.assertTrue(Description_CNP.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Description.isDisplayed());
+				Assert.assertFalse(!Description_CNP.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Description.isEnabled());
+				Assert.assertFalse(!Description_CNP.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void set_Description(String data){
-		Description.clear();
-		Description.sendKeys(data);
+public void set_Description_CNP(String data){
+		Description_CNP.clear();
+		Description_CNP.sendKeys(data);
 }
 
 @FindBy(how= How.XPATH, using = "//input[@value='Add Project']")
-	public static WebElement Add_project;
+	public static WebElement Add_project_CNP;
 
-public void verify_Add_project_Status(String data){
-		//Verifies the Status of the Add_project
+public void verify_Add_project_CNP_Status(String data){
+		//Verifies the Status of the Add_project_CNP
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Add_project.isEnabled());
+				Assert.assertTrue(Add_project_CNP.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Add_project.isDisplayed());
+				Assert.assertTrue(Add_project_CNP.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Add_project.isDisplayed());
+				Assert.assertFalse(!Add_project_CNP.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Add_project.isEnabled());
+				Assert.assertFalse(!Add_project_CNP.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Add_project(){
-		Add_project.click();
-}
-
-@FindBy(how= How.ID, using = "CA_username")
-	public static WebElement CA_username;
-
-public void verify_CA_username(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(CA_username.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_CA_username_Status(String data){
-		//Verifies the Status of the CA_username
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(CA_username.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(CA_username.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!CA_username.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!CA_username.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void set_CA_username(String data){
-		CA_username.clear();
-		CA_username.sendKeys(data);
-}
-
-@FindBy(how= How.ID, using = "CA_realname")
-	public static WebElement CA_realname;
-
-public void verify_CA_realname(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(CA_realname.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_CA_realname_Status(String data){
-		//Verifies the Status of the CA_realname
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(CA_realname.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(CA_realname.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!CA_realname.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!CA_realname.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void set_CA_realname(String data){
-		CA_realname.clear();
-		CA_realname.sendKeys(data);
-}
-
-@FindBy(how= How.ID, using = "CA_Email")
-	public static WebElement CA_Email;
-
-public void verify_CA_Email(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(CA_Email.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_CA_Email_Status(String data){
-		//Verifies the Status of the CA_Email
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(CA_Email.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(CA_Email.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!CA_Email.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!CA_Email.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void set_CA_Email(String data){
-		CA_Email.clear();
-		CA_Email.sendKeys(data);
-}
-
-@FindBy(how= How.ID, using = "CA_Enable")
-	public static WebElement CA_Enable;
-
-public void verify_CA_Enable(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(CA_Enable.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_CA_Enable_Status(String data){
-		//Verifies the Status of the CA_Enable
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(CA_Enable.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(CA_Enable.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!CA_Enable.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!CA_Enable.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void select_CA_Enable(String data){
-		if(CA_Enable.isSelected());
-			CA_Enable.click();
-}
-
-@FindBy(how= How.ID, using = "CA_Protected")
-	public static WebElement CA_Protected;
-
-public void verify_CA_Protected(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(CA_Protected.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_CA_Protected_Status(String data){
-		//Verifies the Status of the CA_Protected
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(CA_Protected.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(CA_Protected.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!CA_Protected.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!CA_Protected.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void select_CA_Protected(String data){
-		if(CA_Protected.isSelected());
-			CA_Protected.click();
-}
-
-@FindBy(how= How.ID, using = "AcessLevel_CA")
-	public static WebElement AcessLevel_CA;
-
-public void verify_AcessLevel_CA(String data){
-		if(!data.contentEquals("Dont care")){
-		Assert.assertEquals(AcessLevel_CA.getAttribute("value"),data);
-	}
-
-}
-
-public void verify_AcessLevel_CA_Status(String data){
-		//Verifies the Status of the AcessLevel_CA
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(AcessLevel_CA.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(AcessLevel_CA.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!AcessLevel_CA.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!AcessLevel_CA.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void select_AcessLevel_CA(String data){
-		Select dropdown= new Select(AcessLevel_CA);
-		 dropdown.selectByVisibleText(data);
+public void click_Add_project_CNP(){
+		Add_project_CNP.click();
 }
 
 @FindBy(how= How.ID, using = "Manage_Custom_Fields")
@@ -3289,32 +3345,32 @@ public void select_Required_On_Close(String data){
 			Required_On_Close.click();
 }
 
-@FindBy(how= How.ID, using = "UpdateCustomField")
-	public static WebElement UpdateCustomField;
+@FindBy(how= How.ID, using = "UpdateCustomField_MCF")
+	public static WebElement UpdateCustomField_MCF;
 
-public void verify_UpdateCustomField_Status(String data){
-		//Verifies the Status of the UpdateCustomField
+public void verify_UpdateCustomField_MCF_Status(String data){
+		//Verifies the Status of the UpdateCustomField_MCF
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(UpdateCustomField.isEnabled());
+				Assert.assertTrue(UpdateCustomField_MCF.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(UpdateCustomField.isDisplayed());
+				Assert.assertTrue(UpdateCustomField_MCF.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!UpdateCustomField.isDisplayed());
+				Assert.assertFalse(!UpdateCustomField_MCF.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!UpdateCustomField.isEnabled());
+				Assert.assertFalse(!UpdateCustomField_MCF.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_UpdateCustomField(){
-		UpdateCustomField.click();
+public void click_UpdateCustomField_MCF(){
+		UpdateCustomField_MCF.click();
 }
 
 @FindBy(how= How.ID, using = "Delete_Custom_Field")
@@ -3463,6 +3519,360 @@ public void verify_LinkCustomField_Status(String data){
 	}
 public void click_LinkCustomField(){
 		LinkCustomField.click();
+}
+
+@FindBy(how= How.ID, using = "ManageGlobalCategories")
+	public static WebElement ManageGlobalCategories;
+
+public void click_ManageGlobalCategories(){
+		ManageGlobalCategories.click();
+}
+
+@FindBy(how= How.ID, using = "Profile_MGC")
+	public static WebElement Profile_MGC;
+
+public void click_Profile_MGC(){
+		Profile_MGC.click();
+}
+
+@FindBy(how= How.ID, using = "Platform_p")
+	public static WebElement Platform_p;
+
+public void verify_Platform_p(String data){
+		Assert.assertEquals(Platform_p,Platform_p);
+}
+
+public void verify_Platform_p_Status(String data){
+		//Verifies the Status of the Platform_p
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Platform_p.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Platform_p.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Platform_p.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Platform_p.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "os_p")
+	public static WebElement os_p;
+
+public void verify_os_p(String data){
+		Assert.assertEquals(os_p,os_p);
+}
+
+public void verify_os_p_Status(String data){
+		//Verifies the Status of the os_p
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(os_p.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(os_p.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!os_p.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!os_p.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "Os_version_P")
+	public static WebElement Os_version_P;
+
+public void verify_Os_version_P(String data){
+		Assert.assertEquals(Os_version_P,Os_version_P);
+}
+
+public void verify_Os_version_P_Status(String data){
+		//Verifies the Status of the Os_version_P
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Os_version_P.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Os_version_P.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Os_version_P.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Os_version_P.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "Actions_P")
+	public static WebElement Actions_P;
+
+public void verify_Actions_P(String data){
+		Assert.assertEquals(Actions_P,Actions_P);
+}
+
+public void verify_Actions_P_Status(String data){
+		//Verifies the Status of the Actions_P
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Actions_P.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Actions_P.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Actions_P.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Actions_P.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "Edit_P")
+	public static WebElement Edit_P;
+
+public void verify_Edit_P_Status(String data){
+		//Verifies the Status of the Edit_P
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Edit_P.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Edit_P.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Edit_P.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Edit_P.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Edit_P(){
+		Edit_P.click();
+}
+
+@FindBy(how= How.ID, using = "Delete_P")
+	public static WebElement Delete_P;
+
+public void verify_Delete_P_Status(String data){
+		//Verifies the Status of the Delete_P
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Delete_P.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Delete_P.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Delete_P.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Delete_P.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Delete_P(){
+		Delete_P.click();
+}
+
+@FindBy(how= How.ID, using = "Platform_AP")
+	public static WebElement Platform_AP;
+
+public void verify_Platform_AP(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(Platform_AP.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_Platform_AP_Status(String data){
+		//Verifies the Status of the Platform_AP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Platform_AP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Platform_AP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Platform_AP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Platform_AP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_Platform_AP(String data){
+		Platform_AP.clear();
+		Platform_AP.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "Os_AP")
+	public static WebElement Os_AP;
+
+public void verify_Os_AP(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(Os_AP.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_Os_AP_Status(String data){
+		//Verifies the Status of the Os_AP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Os_AP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Os_AP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Os_AP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Os_AP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_Os_AP(String data){
+		Os_AP.clear();
+		Os_AP.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "Os_version_AP")
+	public static WebElement Os_version_AP;
+
+public void verify_Os_version_AP(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(Os_version_AP.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_Os_version_AP_Status(String data){
+		//Verifies the Status of the Os_version_AP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Os_version_AP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Os_version_AP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Os_version_AP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Os_version_AP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_Os_version_AP(String data){
+		Os_version_AP.clear();
+		Os_version_AP.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "System_Description_AP")
+	public static WebElement System_Description_AP;
+
+public void verify_System_Description_AP(String data){
+		if(!data.contentEquals("Dont care")){
+		Assert.assertEquals(System_Description_AP.getAttribute("value"),data);
+	}
+
+}
+
+public void verify_System_Description_AP_Status(String data){
+		//Verifies the Status of the System_Description_AP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(System_Description_AP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(System_Description_AP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!System_Description_AP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!System_Description_AP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void set_System_Description_AP(String data){
+		System_Description_AP.clear();
+		System_Description_AP.sendKeys(data);
+}
+
+@FindBy(how= How.ID, using = "Addprofile_AP")
+	public static WebElement Addprofile_AP;
+
+public void verify_Addprofile_AP_Status(String data){
+		//Verifies the Status of the Addprofile_AP
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Addprofile_AP.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Addprofile_AP.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Addprofile_AP.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Addprofile_AP.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Addprofile_AP(){
+		Addprofile_AP.click();
 }
 
 @FindBy(how= How.ID, using = "Administrator_WA")

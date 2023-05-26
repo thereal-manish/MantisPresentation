@@ -4,8 +4,8 @@
     <classes>
       <class name="testsuite.Enter_User_NameEmpty_username"/>
       <class name="testsuite.Enter_User_NameEnter_PasswordInvalid_username_password"/>
-      <class name="testsuite.Enter_User_NameEnter_PasswordInvalid_username_password__2_"/>
       <class name="testsuite.Enter_User_NameEnter_PasswordMantis_Home_Page"/>
+      <class name="testsuite.Enter_User_NameEnter_PasswordInvalid_username_password__2_"/>
     </classes>
  </test>
 </suite>

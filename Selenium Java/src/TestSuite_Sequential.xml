@@ -12,12 +12,12 @@
  </test>
  <test name="TestCase3" >
     <classes>
-      <class name="testsuite.Enter_User_NameEnter_PasswordInvalid_username_password__2_"/>
+      <class name="testsuite.Enter_User_NameEnter_PasswordMantis_Home_Page"/>
     </classes>
  </test>
  <test name="TestCase4" >
     <classes>
-      <class name="testsuite.Enter_User_NameEnter_PasswordMantis_Home_Page"/>
+      <class name="testsuite.Enter_User_NameEnter_PasswordInvalid_username_password__2_"/>
     </classes>
  </test>
 </suite>

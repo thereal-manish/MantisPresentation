@@ -105,8 +105,7 @@ creator.enum qml0140fd7532214524b94a0353c9d8ca19 "Severity UI DD"
 }
 creator.enum qml4e4c0be27413437db96616c48646ebc3 "Priority UI DD"
 {
-	creator.enumerationvalue qml8244d72ef7e24b84b8991cf5b86847fd "block"
-		deleted;
+	
 	creator.enumerationvalue qml20bd0ae761f14806af62ab9a34764eac "none";
 	creator.enumerationvalue qml45bd01debddd4f97919ba8ae8959406f "low";
 	creator.enumerationvalue qml6a6dcd3a98b5435e9c3ebfe3358a2b17 "normal";
@@ -126,8 +125,6 @@ creator.enum qml21292586c0e248debef1d626ea7f66fe "Status UI DD"
 }
 creator.enum qml273c884b28754f1aa95667e23cb55b48 "Resolution UI DD"
 {
-	creator.enumerationvalue qml1c7b96cd3bb34038bbd0f2e3925beaf3 "unnamed"
-		deleted;
 	creator.enumerationvalue qml3a4bf9c7198c4d92ba034ffe90b8a879 "open";
 	creator.enumerationvalue qml58fded874d6047508e8fc41579bc0446 "fixed";
 	creator.enumerationvalue qml241b5748331d43d297dd270f29880262 "reopened";

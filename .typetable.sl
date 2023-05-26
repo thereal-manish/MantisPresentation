@@ -155,13 +155,13 @@ creator.gui.screen qml0bb9e335571d42e7afc5a5a8dffd603a "View Issues"
 			status = dontcare;
 		creator.gui.button qml06b61f8754454fa7acf45599ae75bb31 "Apply Filter"
 			status = dontcare;
-		creator.gui.dropdown qml5934cfffff4f40449ce96d5d4660d511 "Priority (1)"
+		creator.gui.dropdown qml31a9fe21b5064d3fb0d0e2bc7b3706c1 "Priority (1)"
 			status = dontcare
 			deleted;
 		creator.gui.hyperlink qml39f71d11466545c384cea5e99cdccb25 "Platform (1)"
 			status = dontcare
 			deleted;
-		creator.gui.dropdown qml31a9fe21b5064d3fb0d0e2bc7b3706c1 "Priority (1)"
+		creator.gui.dropdown qml5934cfffff4f40449ce96d5d4660d511 "Priority (1)"
 			status = dontcare
 			deleted;
 	}
@@ -204,6 +204,28 @@ creator.gui.screen qml0bb9e335571d42e7afc5a5a8dffd603a "View Issues"
 			status = dontcare
 			deleted;
 	}
+	creator.gui.menubar qml97964862f0024cd290a9e7da216ad21f "Mantis Vertical"
+		deleted
+	{
+		creator.gui.menu qml1a507e82505e4c40b765d7df4c5c5039 "Sections"
+			deleted
+		{
+			creator.gui.clickchoice qmle0b5b653b6b64e5da1c8e4b3f9c79234 "My View"
+				deleted;
+			creator.gui.clickchoice qml11319904f245408fa02bb3c1f137d3a4 "View Issues"
+				deleted;
+			creator.gui.clickchoice qmlaa4808cd4b844e4487f92e92879fad3e "Report Issues"
+				deleted;
+			creator.gui.clickchoice qml2ca573de5bfa4182854f104a8df573ae "Change Log"
+				deleted;
+			creator.gui.clickchoice qml9db3b66465624c1cbfb332b2225d59eb "Road Map"
+				deleted;
+			creator.gui.clickchoice qml6d077a154c8a487d8bfdcdedba8751a4 "Summary"
+				deleted;
+			creator.gui.clickchoice qmlca572f830b8344629db615026e264dea "Manage"
+				deleted;
+		}
+	}
 	creator.gui.menubar qml90689a77c09d455ca142bcdbcaed3bcc "Mantis Navbar"
 		deleted
 	{
@@ -242,28 +264,6 @@ creator.gui.screen qml0bb9e335571d42e7afc5a5a8dffd603a "View Issues"
 			creator.gui.clickchoice qml98123d4fce8040068dfd5dca3e66f7da "RSS"
 				deleted;
 			creator.gui.clickchoice qml860b9bd319a94e9798779520ba519e27 "Logout"
-				deleted;
-		}
-	}
-	creator.gui.menubar qml97964862f0024cd290a9e7da216ad21f "Mantis Vertical"
-		deleted
-	{
-		creator.gui.menu qml1a507e82505e4c40b765d7df4c5c5039 "Sections"
-			deleted
-		{
-			creator.gui.clickchoice qmle0b5b653b6b64e5da1c8e4b3f9c79234 "My View"
-				deleted;
-			creator.gui.clickchoice qml11319904f245408fa02bb3c1f137d3a4 "View Issues"
-				deleted;
-			creator.gui.clickchoice qmlaa4808cd4b844e4487f92e92879fad3e "Report Issues"
-				deleted;
-			creator.gui.clickchoice qml2ca573de5bfa4182854f104a8df573ae "Change Log"
-				deleted;
-			creator.gui.clickchoice qml9db3b66465624c1cbfb332b2225d59eb "Road Map"
-				deleted;
-			creator.gui.clickchoice qml6d077a154c8a487d8bfdcdedba8751a4 "Summary"
-				deleted;
-			creator.gui.clickchoice qmlca572f830b8344629db615026e264dea "Manage"
 				deleted;
 		}
 	}
@@ -446,36 +446,6 @@ creator.gui.screen qml37e39f89d9304384a84114b63ab46f8a "Print Reports"
 		status = dontcare;
 	creator.gui.form qml8d99f5b38dbe4111a2fae1d0b996891c "Print Reports form"
 	{
-		creator.gui.hyperlink qml0134ee082c494097b6179e56bb2f6d65 "Attachments"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmlc47e81d7ac524335b066f155fff8ce3c "Status"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml42618a87ca164a1ea62528e17bf003b6 "P"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml6533856341a445cf8cf6154707ed8118 "Comments"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qmlad52f2872a274a04a374756049076f8b "Category"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmlabc3c5608e504da2826dcf2f2f84f717 "Summary"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qml7f9a5dc12cf54fa99809bd0565259ad2 "Updated date"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmla740343442e24b88ae6c39adcaf6cc01 "ID"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qml33d0d6d712ad4526bde03ea678a157aa "Severity"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml28abbadadaab4a0e8f9c854a82a0bae5 "P"
-			status = dontcare
-			deleted;
 		creator.gui.hyperlink qml90aadfde990348b4804baecbdde0ddb1 "D"
 			status = dontcare;
 		creator.gui.hyperlink qmlbecf3fbb684d49d19248d2427f438217 "Comments"
@@ -1003,14 +973,14 @@ creator.enum qml0140fd7532214524b94a0353c9d8ca19 "Severity UI DD"
 }
 creator.enum qml4e4c0be27413437db96616c48646ebc3 "Priority UI DD"
 {
-	creator.enumerationvalue qml8244d72ef7e24b84b8991cf5b86847fd "block"
-		deleted;
 	creator.enumerationvalue qml20bd0ae761f14806af62ab9a34764eac "none";
 	creator.enumerationvalue qml45bd01debddd4f97919ba8ae8959406f "low";
 	creator.enumerationvalue qml6a6dcd3a98b5435e9c3ebfe3358a2b17 "normal";
 	creator.enumerationvalue qml81a87605b7e24095a744dd7e6a6ff78f "high";
 	creator.enumerationvalue qmldabee8fb8a184938a26b30a60acce728 "urgent";
 	creator.enumerationvalue qmle8f36739f67e49efbf2e12a8471bc930 "immediate";
+	creator.enumerationvalue qml8244d72ef7e24b84b8991cf5b86847fd "block"
+		deleted;
 }
 creator.enum qml21292586c0e248debef1d626ea7f66fe "Status UI DD"
 {
@@ -1024,8 +994,6 @@ creator.enum qml21292586c0e248debef1d626ea7f66fe "Status UI DD"
 }
 creator.enum qml273c884b28754f1aa95667e23cb55b48 "Resolution UI DD"
 {
-	creator.enumerationvalue qml1c7b96cd3bb34038bbd0f2e3925beaf3 "unnamed"
-		deleted;
 	creator.enumerationvalue qml3a4bf9c7198c4d92ba034ffe90b8a879 "open";
 	creator.enumerationvalue qml58fded874d6047508e8fc41579bc0446 "fixed";
 	creator.enumerationvalue qml241b5748331d43d297dd270f29880262 "reopened";
@@ -1037,6 +1005,8 @@ creator.enum qml273c884b28754f1aa95667e23cb55b48 "Resolution UI DD"
 	"no change required";
 	creator.enumerationvalue qmlc3b3e38778e746d5b73f512533ad75a7 "suspended";
 	creator.enumerationvalue qml7f698b331810441b9dda753393d348c3 "won\'t fix";
+	creator.enumerationvalue qml1c7b96cd3bb34038bbd0f2e3925beaf3 "unnamed"
+		deleted;
 }
 creator.enum qml45aaeec3b4494921ba048d4edcf13404 "Reproducibility UI DD"
 {
@@ -1149,6 +1119,10 @@ creator.gui.screen qmla7ae574914f34642ae7c9de933cd1ca0 "Report Issue"
 		]
 			type = qmlec082e4d87e54248a5a11c95575e06b6
 			status = dontcare;
+		creator.gui.radiobutton qml37cb43b9a1e04890a6a2b84212f74074 "View Status"
+			type = qml3a9c3641b50e455fa19b847cd6ad78d0
+			status = dontcare
+			deleted;
 		creator.gui.dropdown qmle49bf7bff3b84d3ca666108e7a1c7b32 "Select Profile"
 			status = dontcare
 			deleted;
@@ -1160,32 +1134,6 @@ creator.gui.screen qmla7ae574914f34642ae7c9de933cd1ca0 "Report Issue"
 			type = String
 			status = dontcare
 			deleted;
-		creator.gui.radiobutton qml37cb43b9a1e04890a6a2b84212f74074 "View Status"
-			type = qml3a9c3641b50e455fa19b847cd6ad78d0
-			status = dontcare
-			deleted;
-	}
-	creator.gui.menubar qml5c796ad8d8d440ddab66f249295e9fe7 "Mantis Vertical"
-		deleted
-	{
-		creator.gui.menu qmlbb1f280791b5450896ecd78dd65fb09e "Sections"
-			deleted
-		{
-			creator.gui.clickchoice qmle53a265b65024f99bdcc9042982da4ec "My View"
-				deleted;
-			creator.gui.clickchoice qml16daf4920c7747bd985fdf654a9c7ddd "View Issues"
-				deleted;
-			creator.gui.clickchoice qml34107cb22bc94a7b9bb1fae281b34b54 "Report Issues"
-				deleted;
-			creator.gui.clickchoice qml7c00146db7154f60a14a83f11b36d90a "Change Log"
-				deleted;
-			creator.gui.clickchoice qml89176a19a4884179b9cdb9bc5f8eadaa "Road Map"
-				deleted;
-			creator.gui.clickchoice qmlaafdb13af7784f7bbe360916c797a0a2 "Summary"
-				deleted;
-			creator.gui.clickchoice qmle01e54d332a849a69bc691fdd15b8318 "Manage"
-				deleted;
-		}
 	}
 	creator.gui.menubar qmlf40811204c6243009dca0e60b78348a7 "Mantis Navbar"
 		deleted
@@ -1225,6 +1173,28 @@ creator.gui.screen qmla7ae574914f34642ae7c9de933cd1ca0 "Report Issue"
 			creator.gui.clickchoice qmld649a615dff440d4ac87f640cf8b9ca2 "RSS"
 				deleted;
 			creator.gui.clickchoice qmle9e8d8feda494a6584d3a60af30a37d5 "Logout"
+				deleted;
+		}
+	}
+	creator.gui.menubar qml5c796ad8d8d440ddab66f249295e9fe7 "Mantis Vertical"
+		deleted
+	{
+		creator.gui.menu qmlbb1f280791b5450896ecd78dd65fb09e "Sections"
+			deleted
+		{
+			creator.gui.clickchoice qmle53a265b65024f99bdcc9042982da4ec "My View"
+				deleted;
+			creator.gui.clickchoice qml16daf4920c7747bd985fdf654a9c7ddd "View Issues"
+				deleted;
+			creator.gui.clickchoice qml34107cb22bc94a7b9bb1fae281b34b54 "Report Issues"
+				deleted;
+			creator.gui.clickchoice qml7c00146db7154f60a14a83f11b36d90a "Change Log"
+				deleted;
+			creator.gui.clickchoice qml89176a19a4884179b9cdb9bc5f8eadaa "Road Map"
+				deleted;
+			creator.gui.clickchoice qmlaafdb13af7784f7bbe360916c797a0a2 "Summary"
+				deleted;
+			creator.gui.clickchoice qmle01e54d332a849a69bc691fdd15b8318 "Manage"
 				deleted;
 		}
 	}
@@ -1406,6 +1376,23 @@ creator.gui.screen qml4b1166851a70464eb31277269d74a594 "Mantis Home"
 		"Issue ID TIMELINE"
 			status = dontcare;
 	}
+	creator.gui.hyperlink qml83be4ebc2d514bcbacf01ad429d8426b "My View"
+		status = dontcare
+		deleted;
+	creator.gui.hyperlink qml221420d1e9e44ea186f0cd4dffdd31fb "Road Map"
+		status = dontcare
+		deleted;
+	creator.gui.uitable qmlc65b4feee5d84b619d97fb129563bf21 "Manage Activities"
+		deleted
+	{
+		creator.gui.hyperlink qmlff6cd01851c34b00b44bfc4db0bde798
+		"Assigned to me (Unresolved)"
+			status = dontcare
+			deleted;
+	}
+	creator.gui.hyperlink qmlaabaa98ba9184ee097078187ccf59a28 "Report Issue"
+		status = dontcare
+		deleted;
 	creator.gui.group qml049b2c65bd5e4577a5fb0b1da4492aa2 "Unassigned (1)"
 		deleted
 	{
@@ -1419,42 +1406,6 @@ creator.gui.screen qml4b1166851a70464eb31277269d74a594 "Mantis Home"
 			status = dontcare
 			deleted;
 	}
-	creator.gui.hyperlink qmlaabaa98ba9184ee097078187ccf59a28 "Report Issue"
-		status = dontcare
-		deleted;
-	creator.gui.uitable qmlc65b4feee5d84b619d97fb129563bf21 "Manage Activities"
-		deleted
-	{
-		creator.gui.hyperlink qmlff6cd01851c34b00b44bfc4db0bde798
-		"Assigned to me (Unresolved)"
-			status = dontcare
-			deleted;
-	}
-	creator.gui.hyperlink qml50e81ea82f404553bd3f355359a4dd91 "Summary"
-		status = dontcare
-		deleted;
-	creator.gui.hyperlink qml78b0619e0ca549099f5f98013e8c518d "Manage"
-		status = dontcare
-		deleted;
-	creator.gui.hyperlink qmlb1f749a9aebe436c9bead2b14f329cc2 "View Issues"
-		status = dontcare
-		deleted;
-	creator.gui.hyperlink qml221420d1e9e44ea186f0cd4dffdd31fb "Road Map"
-		status = dontcare
-		deleted;
-	creator.gui.form qmle2a44d5759f94f7ebf5dd3e11ef83fa6 "Assigned to me"
-		deleted
-	{
-		creator.gui.hyperlink qml075667219b1f4a1db15906ef76ddfa14 "Assigned to me"
-			status = dontcare
-			deleted;
-		creator.gui.button qml402c1fd254f1433f952d4327215d5c8e "View Issues"
-			status = dontcare
-			deleted;
-	}
-	creator.gui.hyperlink qml83be4ebc2d514bcbacf01ad429d8426b "My View"
-		status = dontcare
-		deleted;
 	creator.gui.group qml983607e4315f4761bdfd91d87c07406b "Unassigned (1)"
 		deleted
 	{
@@ -1468,11 +1419,23 @@ creator.gui.screen qml4b1166851a70464eb31277269d74a594 "Mantis Home"
 			status = dontcare
 			deleted;
 	}
-	creator.gui.tab qml5f2bfdfaa0c842fea185340496affaa4 "Assigned to me"
+	creator.gui.hyperlink qml12b6fca370da46f681153241ed476d07 "Change Log"
+		status = dontcare
+		deleted;
+	creator.gui.hyperlink qml50e81ea82f404553bd3f355359a4dd91 "Summary"
+		status = dontcare
+		deleted;
+	creator.gui.form qmle2a44d5759f94f7ebf5dd3e11ef83fa6 "Assigned to me"
 		deleted
 	{
+		creator.gui.hyperlink qml075667219b1f4a1db15906ef76ddfa14 "Assigned to me"
+			status = dontcare
+			deleted;
+		creator.gui.button qml402c1fd254f1433f952d4327215d5c8e "View Issues"
+			status = dontcare
+			deleted;
 	}
-	creator.gui.hyperlink qml12b6fca370da46f681153241ed476d07 "Change Log"
+	creator.gui.hyperlink qmlb1f749a9aebe436c9bead2b14f329cc2 "View Issues"
 		status = dontcare
 		deleted;
 	creator.gui.group qmlaf01553846c349aa821bcf5b40443099 "Unassigned (1)"
@@ -1488,8 +1451,15 @@ creator.gui.screen qml4b1166851a70464eb31277269d74a594 "Mantis Home"
 			status = dontcare
 			deleted;
 	}
+	creator.gui.hyperlink qml78b0619e0ca549099f5f98013e8c518d "Manage"
+		status = dontcare
+		deleted;
+	creator.gui.tab qml5f2bfdfaa0c842fea185340496affaa4 "Assigned to me"
+		deleted
+	{
+	}
 }
-creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
+creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "Manage_Screen"
 {
 	creator.gui.tab qml578fdcda6b3246688760d83fc1ea6eaa "I tab"
 	{
@@ -1574,10 +1544,33 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			status = dontcare;
 		creator.gui.button qmldeb7d3ca2a00408982cb438a5a69dd09 "unused"
 			status = dontcare;
+		creator.gui.form qml2f55b43c0b144f59807597d034cab1b2 "CreateAccount"
+		{
+			creator.gui.textbox qml37a944d4f1a74e2aaf9c0f81d94a9b29 "CA_username"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml242262c39f254ae382897b9367442e33 "CA_realname"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qmlf50050e0d77749af9ead1dea228505d6 "CA_Email"
+				type = String
+				status = dontcare;
+			creator.gui.checkbox qmlbc17921a5c6345ce99b285a20f47db37 " CA_Enable"
+				status = dontcare
+				checked = dontcare;
+			creator.gui.checkbox qml1d7576d6bc2343e5815b2205dc914602 "CA_Protected"
+				status = dontcare
+				checked = dontcare;
+			creator.gui.dropdown qmle737529ca3404f42a603e47e697ef4e8 "AcessLevel_CA"
+				type = qml30d0ed1e0fd6457bae2349d60009bdd7
+				status = dontcare;
+			creator.gui.button qml46cee4f32d1c4ce0a74dfd4cd7e2f735 "Createuser_CA"
+				status = dontcare;
+		}
 	}
 	creator.gui.form qml18191262afc84e2b980014e70abba9dd "Manage accounts"
 	{
-		creator.gui.button qmle877a37d163b4a41b99f31cff1671e65 "Craete account"
+		creator.gui.button qmle877a37d163b4a41b99f31cff1671e65 "Craete account_Ma"
 			status = dontcare;
 		creator.gui.checkbox qml3dc38846d6f14213aaa3778aa8cf8415 "Hide Inactive"
 			status = dontcare
@@ -1626,7 +1619,7 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				status = dontcare;
 			creator.gui.hyperlink qmlb9fc0e9a6e1b4bfb8f65a8d025b88ccd "View Status HL"
 				status = dontcare;
-			creator.gui.button qml43955d863fc94c6faf1f0072e16f0be7 "Create Projects"
+			creator.gui.button qml43955d863fc94c6faf1f0072e16f0be7 "Create Projects_MP"
 				annotations = [ "selenium:XPATH" =
 			"//button[normalize-space()=\'Create New Project\']";
 			]
@@ -1634,18 +1627,18 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 		}
 		creator.gui.form qml5681b100f353441d9330e2230a1dd8d9 "Global Categories"
 		{
-			creator.gui.button qml448a438468824105938f2d7204f8da54 "Edit"
+			creator.gui.button qml448a438468824105938f2d7204f8da54 "Edit_GC"
 				status = dontcare;
-			creator.gui.button qmlf606d7dbd5c544259532a34c6fe0be55 "Delete"
+			creator.gui.button qmlf606d7dbd5c544259532a34c6fe0be55 "Delete_GC"
 				status = dontcare;
 			creator.gui.textbox qml3ff8231df7e04f1eb3888eb7ab7cacf0
 			"Text global categories textbox"
 				type = String
 				status = dontcare;
-			creator.gui.button qml9d94653de40d4aa99bc3d93e4e36e10c "Add Category"
+			creator.gui.button qml9d94653de40d4aa99bc3d93e4e36e10c "Add Category_GC"
 				status = dontcare;
 			creator.gui.button qmlfa71b22e67104f06be336455978d4ba7
-			"Add and Edit Category"
+			"Add and Edit Category_GC"
 				status = dontcare;
 		}
 	}
@@ -1659,7 +1652,7 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				status = dontcare;
 			creator.gui.hyperlink qml9679fbaa3f71442fa2377213eb641342 "Dont Care"
 				status = dontcare;
-			creator.gui.button qmledd4617466a74b19b60396c6abcd6b34 "Create Tags"
+			creator.gui.button qmledd4617466a74b19b60396c6abcd6b34 "Create Tags_T"
 				status = dontcare;
 			creator.gui.hyperlink qml0c4e1701b0e44079a56f22b139e0cf98 "Last Updated HL"
 				status = dontcare;
@@ -1676,52 +1669,27 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			creator.gui.textbox qmld40b444f3fd9401dad3b4650a37cd3fd "Tag Description"
 				type = String
 				status = dontcare;
-			creator.gui.button qml16339671c58045a5b40ca978b800d828 "Create Tags"
+			creator.gui.button qml16339671c58045a5b40ca978b800d828 "Create Tags_CT"
 				status = dontcare;
 		}
 	}
 	creator.gui.form qml73a4bffcd656481f96f762d686ca5d49 "create new projects"
 	{
-		creator.gui.textbox qmla32db9e2bc4e439c847eafffff03f66d "projectnameTX"
+		creator.gui.textbox qmla32db9e2bc4e439c847eafffff03f66d "projectnameCNP"
 			annotations = [ "selenium:XPATH" = "//input[@id=\'project-name\']";
 		]
 			type = String
 			status = dontcare;
-		creator.gui.textbox qml62b4b2d07c594b7a9fc2b05d93d844bb "Description"
+		creator.gui.textbox qml62b4b2d07c594b7a9fc2b05d93d844bb "Description_CNP"
 			annotations = [ "selenium:XPATH" =
 		"//textarea[@id=\'project-description\']";
 		]
 			type = String
 			status = dontcare;
-		creator.gui.button qml0a01cb5449a445a18e4ff8f68cf918e3 "Add project"
+		creator.gui.button qml0a01cb5449a445a18e4ff8f68cf918e3 "Add project_CNP"
 			annotations = [ "selenium:XPATH" = "//input[@value=\'Add Project\']";
 		]
 			status = dontcare;
-	}
-	creator.gui.form qml1ac151b8762e44678f3bbdf5d15d84ab "CreateAccount"
-	{
-		creator.gui.textbox qml3373cf53e34245c6817753233ab3909d "CA_username"
-			type = String
-			status = dontcare;
-		creator.gui.textbox qmlb305d76827344681a88e9ebbfc5049a6 "CA_realname"
-			type = String
-			status = dontcare;
-		creator.gui.textbox qmld23f8c81ec3e4144a50ec9b1aea83d39 "CA_Email"
-			type = String
-			status = dontcare;
-		creator.gui.checkbox qml628fdb608b424e3080d9e1124acb02c9 " CA_Enable"
-			status = dontcare
-			checked = dontcare;
-		creator.gui.checkbox qml3f61284d55534cc3a2a223d1b26d97dd "CA_Protected"
-			status = dontcare
-			checked = dontcare;
-		creator.gui.dropdown qmla9f792804432407a895cef0ff478a245 "AcessLevel_CA"
-			type = qml30d0ed1e0fd6457bae2349d60009bdd7
-			status = dontcare;
-		creator.gui.textbox qmla67b7c4b70ab46f0b5d0e555b4afafec "CA_Accesslevel"
-			type = String
-			status = dontcare
-			deleted;
 	}
 	creator.gui.tab qml4057c044559546b39c13028fa6a5ab94 "Manage Custom Fields"
 	{
@@ -1808,9 +1776,17 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			"Required On Close"
 				status = dontcare
 				checked = dontcare;
-			creator.gui.button qml4dfd8cfa9a934ca28513c7d66985465a "UpdateCustomField"
+			creator.gui.button qml4dfd8cfa9a934ca28513c7d66985465a
+			"UpdateCustomField_MCF"
 				status = dontcare;
+			creator.gui.button qmlc2786e545c7f40358f35e60d1a593e40 "Delete"
+				status = dontcare
+				deleted;
 			creator.gui.textbox qml9f30995149184b1399b22a0285e80235 "Read access"
+				type = String
+				status = dontcare
+				deleted;
+			creator.gui.textbox qml0d7c3d5fd6ee4ac5854ddc5c5644165c "unnamed"
 				type = String
 				status = dontcare
 				deleted;
@@ -1820,13 +1796,6 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				deleted;
 			creator.gui.textbox qml9864715ee9eb4496a9b706b5c43239ee "Write access"
 				type = String
-				status = dontcare
-				deleted;
-			creator.gui.textbox qml0d7c3d5fd6ee4ac5854ddc5c5644165c "unnamed"
-				type = String
-				status = dontcare
-				deleted;
-			creator.gui.button qmlc2786e545c7f40358f35e60d1a593e40 "Delete"
 				status = dontcare
 				deleted;
 		}
@@ -1845,16 +1814,28 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 		}
 		creator.gui.button qml737e14a2a09f4d61ab87822650e0a0e1 "LinkCustomField"
 			status = dontcare;
-		creator.gui.button qml5fa2abecfbb34fb5ae3893b2e0777bb7
-		"Delete Custom Field (6)"
+		creator.gui.button qml8d29ba8aa2ed43769c3642d3af3cf55a
+		"Delete Custom Field (5)"
+			status = dontcare
+			deleted;
+		creator.gui.button qml00c72321a59c46ed80c3d39d6ab4b97d
+		"Delete Custom Field (3)"
+			status = dontcare
+			deleted;
+		creator.gui.button qml6c4a0b95860d4e25b116c0744ee78ead
+		"Delete Custom Field (2)"
+			status = dontcare
+			deleted;
+		creator.gui.button qml7a02f87fc8e5454cadc8b8a6c46477c6
+		"Delete Custom Field (4)"
 			status = dontcare
 			deleted;
 		creator.gui.button qmld56bd874ef8f48508374a4f743c9686d
 		"Delete Custom Field (1)"
 			status = dontcare
 			deleted;
-		creator.gui.button qml00c72321a59c46ed80c3d39d6ab4b97d
-		"Delete Custom Field (3)"
+		creator.gui.button qml5fa2abecfbb34fb5ae3893b2e0777bb7
+		"Delete Custom Field (6)"
 			status = dontcare
 			deleted;
 		creator.gui.group qml586d6069fc2045c88ebd7537b5103418 "Custom Fields"
@@ -1876,83 +1857,45 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				status = dontcare
 				deleted;
 		}
-		creator.gui.button qml7a02f87fc8e5454cadc8b8a6c46477c6
-		"Delete Custom Field (4)"
-			status = dontcare
-			deleted;
-		creator.gui.button qml8d29ba8aa2ed43769c3642d3af3cf55a
-		"Delete Custom Field (5)"
-			status = dontcare
-			deleted;
-		creator.gui.button qml6c4a0b95860d4e25b116c0744ee78ead
-		"Delete Custom Field (2)"
-			status = dontcare
-			deleted;
 	}
-	creator.gui.menubar qmld8c2eff4a0444d48962ddecf53d96085 "Mantis Vertical"
-		deleted
+	creator.gui.tab qml596ab7e7c7214798aa5b954e94e46cd6 "ManageGlobalCategories"
 	{
-		creator.gui.menu qml831d1bd0251740509e33c0f9281fadef "Sections"
-			deleted
+		creator.gui.group qml85a34e5a210b4ead84b47e43e03a0f75 "Profile_MGC"
 		{
-			creator.gui.clickchoice qml48fa3211de8c48fca0d19ee786f201a1 "My View"
-				deleted;
-			creator.gui.clickchoice qmld6a2abe9ef1f4dd88f6e247f8f13a905 "View Issues "
-				deleted;
-			creator.gui.clickchoice qml4337269a4ab9407d8cecbeb75164b288 "Report Issues"
-				deleted;
-			creator.gui.clickchoice qml33d5546c35ed4ebfb4b9704d6cb0aa16 "Change Log"
-				deleted;
-			creator.gui.clickchoice qml5d757668a13d4083ae78e0379a53762a "Road Map"
-				deleted;
-			creator.gui.clickchoice qml7f2b4b9a1782431e9f67cef303b8c020 "Summary"
-				deleted;
-			creator.gui.clickchoice qml1f0b8b1392ed42e683a45e7d0a8b5cbc "Manage"
-				deleted;
+			creator.gui.labelwidget qmlbff1ce0b13e3405183a320cbe39327a5 "Platform_p"
+				status = dontcare;
+			creator.gui.labelwidget qml44811fce5f0e4f4fb701af0503e5d432 "os_p"
+				status = dontcare;
+			creator.gui.labelwidget qmlf732965af4d34a60a88245596d5d0dea "Os version_P"
+				status = dontcare;
+			creator.gui.group qml3ff13ebe52c94de3ab5e32f41cd6d5e1 "Z"
+				deleted
+			{
+			}
 		}
-	}
-	creator.gui.button qml2208d275064541b0808ba274c07e20a7 "Delete Custom Field"
-		status = dontcare
-		deleted;
-	creator.gui.menubar qml27faee61c5fe4c86818b3802380e2c0c "Mantis Navbar"
-		deleted
-	{
-		creator.gui.menu qml5df4fe5ec1e143fb814e2a4f3bcbb662 "My Account DD"
-			deleted
+		creator.gui.labelwidget qml8b7d5c65d52040a29dff0108355a226c "Actions_P"
+			status = dontcare;
+		creator.gui.button qml75bb6975b23e423a9880d337bab9d60e "Edit_P"
+			status = dontcare;
+		creator.gui.button qml4f4f6c0c3d84460bba377a9929d99f5b "Delete_P"
+			status = dontcare;
+		creator.gui.form qml80d91da8df1f4dc19aba4294cc93b4b1 "Addprofile_MGC"
 		{
-			creator.gui.clickchoice qml5f6efa32f9f64ee8b1c3cfa77a69f940 "username"
-				deleted;
-		}
-		creator.gui.menu qml1fcbedc4ae8c4d46aeb7fa74c6d6eed1 "Report"
-			deleted
-		{
-			creator.gui.clickchoice qml91e9306a16064df9a43e3ccc3efbb49b
-			"Report Issuse Button"
-				deleted;
-		}
-		creator.gui.menu qml78484732f6fb4fa0adb826b8ad9b2ac2 "Invite"
-			deleted
-		{
-			creator.gui.clickchoice qmledf1e9083e454e77b32919084f2155f0 "Invite Users"
-				deleted;
-		}
-		creator.gui.menu qml6ae50b01480a4807a5d6af96b3b3139c "Demo"
-			deleted
-		{
-			creator.gui.clickchoice qmldbd39788e8924f06ac5c81a24273afd3 "Demo"
-				deleted;
-			creator.gui.clickchoice qml3eb517611a824f9e8b813a2bfe2cc72b "All Projects"
-				deleted;
-		}
-		creator.gui.menu qmld077a5f6f9fe4e0a8cc1f2a52f4fc7ab "username DD"
-			deleted
-		{
-			creator.gui.clickchoice qml48d69e87fa834faba1c2e5f1e0d0d05c "My Account"
-				deleted;
-			creator.gui.clickchoice qmld9706b68392046f1b0f4852197253ea4 "RSS"
-				deleted;
-			creator.gui.clickchoice qmlec23937e1d79479b9417579b23bd7602 "Logout"
-				deleted;
+			creator.gui.textbox qmlbc19eddfabaf4623a04526074274a726 "Platform_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml819dc0f185284b2986fb215cfcebc9cb "Os_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qmla0b190a5476e48c1b3bc3214f0d342ba "Os version_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml5dcec329ebf6435c928009a0b07426c0
+			"System Description_AP"
+				type = String
+				status = dontcare;
+			creator.gui.button qml993eaae2310540dcad2e1bfde53f836a "Addprofile_AP"
+				status = dontcare;
 		}
 	}
 	creator.gui.form qmlccdb862575dc438aabb6c6b1c6ae190a "EditCustomField"
@@ -2060,6 +2003,131 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			status = dontcare
 			deleted;
 	}
+	creator.gui.menubar qml27faee61c5fe4c86818b3802380e2c0c "Mantis Navbar"
+		deleted
+	{
+		creator.gui.menu qml5df4fe5ec1e143fb814e2a4f3bcbb662 "My Account DD"
+			deleted
+		{
+			creator.gui.clickchoice qml5f6efa32f9f64ee8b1c3cfa77a69f940 "username"
+				deleted;
+		}
+		creator.gui.menu qml1fcbedc4ae8c4d46aeb7fa74c6d6eed1 "Report"
+			deleted
+		{
+			creator.gui.clickchoice qml91e9306a16064df9a43e3ccc3efbb49b
+			"Report Issuse Button"
+				deleted;
+		}
+		creator.gui.menu qml78484732f6fb4fa0adb826b8ad9b2ac2 "Invite"
+			deleted
+		{
+			creator.gui.clickchoice qmledf1e9083e454e77b32919084f2155f0 "Invite Users"
+				deleted;
+		}
+		creator.gui.menu qml6ae50b01480a4807a5d6af96b3b3139c "Demo"
+			deleted
+		{
+			creator.gui.clickchoice qmldbd39788e8924f06ac5c81a24273afd3 "Demo"
+				deleted;
+			creator.gui.clickchoice qml3eb517611a824f9e8b813a2bfe2cc72b "All Projects"
+				deleted;
+		}
+		creator.gui.menu qmld077a5f6f9fe4e0a8cc1f2a52f4fc7ab "username DD"
+			deleted
+		{
+			creator.gui.clickchoice qml48d69e87fa834faba1c2e5f1e0d0d05c "My Account"
+				deleted;
+			creator.gui.clickchoice qmld9706b68392046f1b0f4852197253ea4 "RSS"
+				deleted;
+			creator.gui.clickchoice qmlec23937e1d79479b9417579b23bd7602 "Logout"
+				deleted;
+		}
+	}
+	creator.gui.form qml1ac151b8762e44678f3bbdf5d15d84ab "CreateAccount"
+		deleted
+	{
+		creator.gui.textbox qml3373cf53e34245c6817753233ab3909d "CA_username"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.textbox qmlb305d76827344681a88e9ebbfc5049a6 "CA_realname"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.textbox qmld23f8c81ec3e4144a50ec9b1aea83d39 "CA_Email"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.checkbox qml628fdb608b424e3080d9e1124acb02c9 " CA_Enable"
+			status = dontcare
+			checked = dontcare
+			deleted;
+		creator.gui.checkbox qml3f61284d55534cc3a2a223d1b26d97dd "CA_Protected"
+			status = dontcare
+			checked = dontcare
+			deleted;
+		creator.gui.dropdown qmla9f792804432407a895cef0ff478a245 "AcessLevel_CA"
+			type = qml30d0ed1e0fd6457bae2349d60009bdd7
+			status = dontcare
+			deleted;
+		creator.gui.button qmla4114e03d8844af68a88099494465d1e "Createuser_CA"
+			status = dontcare
+			deleted;
+		creator.gui.textbox qmla67b7c4b70ab46f0b5d0e555b4afafec "CA_Accesslevel"
+			type = String
+			status = dontcare
+			deleted;
+	}
+	creator.gui.menubar qmld8c2eff4a0444d48962ddecf53d96085 "Mantis Vertical"
+		deleted
+	{
+		creator.gui.menu qml831d1bd0251740509e33c0f9281fadef "Sections"
+			deleted
+		{
+			creator.gui.clickchoice qml48fa3211de8c48fca0d19ee786f201a1 "My View"
+				deleted;
+			creator.gui.clickchoice qmld6a2abe9ef1f4dd88f6e247f8f13a905 "View Issues "
+				deleted;
+			creator.gui.clickchoice qml4337269a4ab9407d8cecbeb75164b288 "Report Issues"
+				deleted;
+			creator.gui.clickchoice qml33d5546c35ed4ebfb4b9704d6cb0aa16 "Change Log"
+				deleted;
+			creator.gui.clickchoice qml5d757668a13d4083ae78e0379a53762a "Road Map"
+				deleted;
+			creator.gui.clickchoice qml7f2b4b9a1782431e9f67cef303b8c020 "Summary"
+				deleted;
+			creator.gui.clickchoice qml1f0b8b1392ed42e683a45e7d0a8b5cbc "Manage"
+				deleted;
+		}
+	}
+	creator.gui.form qmlf82bb05521284abe81aa27c8abf01919 "Addprofile_MGC"
+		deleted
+	{
+		creator.gui.textbox qml5e175897e4b74c3ca4dabeb34a6efc9d "Platform_AP"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.textbox qmlb0722e1bd19a4917911b614ae5c70f4e "Os_AP"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.textbox qml2c522a1f9bac4f249986081b948fc46d "Os version_AP"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.textbox qml34e18b98515a48eeacb1ddcf08ae6acc
+		"System Description_AP"
+			type = String
+			status = dontcare
+			deleted;
+		creator.gui.button qml84c08908c5474395a14ea8ccf6b01626 "Addprofile_AP"
+			status = dontcare
+			deleted;
+	}
+	creator.gui.button qml2208d275064541b0808ba274c07e20a7 "Delete Custom Field"
+		status = dontcare
+		deleted;
 }
 creator.enum qml30d0ed1e0fd6457bae2349d60009bdd7 "createaccount_Enum"
 {
@@ -2242,55 +2310,6 @@ qmlccb7f67489fb456da4408609f3755f97 ]
 	creator.primitivefield qmlccb7f67489fb456da4408609f3755f97 "URL"
 		type = String;
 }
-creator.customaction qmle2722a0384a34c86955b6efeebbb837d "Wait"
-	interfaces = [ qml6906a09fc89f412cb22d9eae76487c0a
-	deleted ]
-	shortform = "WA"
-	direction = in
-	tokens = [ literal "This CA waits for 5 seconds" ]
-	deleted
-{
-}
-creator.enum qmlc0f20a8be4ed4be88ae4663d494a4763 "Assigned (1)"
-	deleted
-{
-	creator.enumerationvalue qml43d0f0bb3daa4a488e72ae4c17fc1a19 "[any]"
-		deleted;
-	creator.enumerationvalue qmlde89687d73874442a30bdd833a3b22f6 "[none]"
-		deleted;
-	creator.enumerationvalue qml541cf07b31204f6db17556d6c876215c "[myself]"
-		deleted;
-	creator.enumerationvalue qml1c3ccd25e4804ea0a9684a80ef3689e2 "user"
-		deleted;
-}
-creator.enum qmlc2500941e95448c392248ab500ecb0bd "createaccount_Enum (1)"
-	deleted
-{
-	creator.enumerationvalue qml18417ded1b944ce6b085540b59dd12a1 "Reporter"
-		deleted;
-	creator.enumerationvalue qml3856debf449f4c4ab428f63b46b9083d "Updater"
-		deleted;
-	creator.enumerationvalue qml707ec4d3f0654902815877b4c5b9b994 "Developer"
-		deleted;
-	creator.enumerationvalue qml6501eb77ce764e9eb19812a541b47b12 "Manager"
-		deleted;
-	creator.enumerationvalue qml89ba436031fb49a7a95b1afbb1dffd58 "Viewer"
-		deleted;
-	creator.enumerationvalue qmlcb6727272ef64271b3650fd1a8f07a98 "Administrator"
-		deleted;
-}
-creator.customaction qmla073b2f80ed64e758a886cb7b99f17c3 "Launch URL"
-	interfaces = [ qml2ed5bc86b28d48e89b832a10d6d45187
-	deleted ]
-	shortform = "LB"
-	direction = in
-	tokens = [ literal "URL launched successfully" ]
-	deleted
-{
-	creator.primitivefield qml10d2c74811f34ee7a87174de6260a47f "url"
-		type = String
-		deleted;
-}
 creator.enum qml1b094fd694134cdbb60209e1618e6922 "createaccount_Enum (1)"
 	deleted
 {
@@ -2307,15 +2326,71 @@ creator.enum qml1b094fd694134cdbb60209e1618e6922 "createaccount_Enum (1)"
 	creator.enumerationvalue qml5d862ba5581147af9f4a0fd4a0da2459 "Administrator"
 		deleted;
 }
-creator.externalinterface qml2ed5bc86b28d48e89b832a10d6d45187 "mantisbt"
+creator.customaction qmle2722a0384a34c86955b6efeebbb837d "Wait"
+	interfaces = [ qml6906a09fc89f412cb22d9eae76487c0a
+	deleted ]
+	shortform = "WA"
 	direction = in
-	deleted;
-creator.enum qml3a9c3641b50e455fa19b847cd6ad78d0 "View Status -DD"
+	tokens = [ literal "This CA waits for 5 seconds" ]
 	deleted
 {
-	creator.enumerationvalue qml4bf9f7932b244d65a6986709edd45d47 "public"
+}
+creator.gui.screen qml3dfe493bee804558a3ea5593ea27a865 "Custom Actions"
+	deleted
+{
+}
+creator.enum qmlc0f20a8be4ed4be88ae4663d494a4763 "Assigned (1)"
+	deleted
+{
+	creator.enumerationvalue qml43d0f0bb3daa4a488e72ae4c17fc1a19 "[any]"
 		deleted;
-	creator.enumerationvalue qmlbd30844886d84de3b2d78055f19dfff4 "private"
+	creator.enumerationvalue qmlde89687d73874442a30bdd833a3b22f6 "[none]"
+		deleted;
+	creator.enumerationvalue qml541cf07b31204f6db17556d6c876215c "[myself]"
+		deleted;
+	creator.enumerationvalue qml1c3ccd25e4804ea0a9684a80ef3689e2 "user"
+		deleted;
+}
+creator.customaction qml645a858bf837423dabac77eadb86e378 "Wait"
+	interfaces = [ qml2ed5bc86b28d48e89b832a10d6d45187
+	deleted ]
+	shortform = "WA"
+	direction = in
+	tokens = [ literal "This custom action wait for " reference
+qml96f2f7f3709b4aa494cc18847568ec62 literal " seconds" ]
+	deleted
+{
+	creator.primitivefield qml96f2f7f3709b4aa494cc18847568ec62 "seconds"
+		type = number
+		deleted;
+}
+creator.customaction qmlf42f209515e641d7872607c7101130cc "Wait"
+	interfaces = [ qml6906a09fc89f412cb22d9eae76487c0a
+	deleted ]
+	shortform = "WA"
+	direction = in
+	tokens = [ literal "This action waits for " reference
+qml0fb94deb6f9645beb5883f78e10bedfb literal " seconds" ]
+	deleted
+{
+	creator.primitivefield qml0fb94deb6f9645beb5883f78e10bedfb "seconds"
+		type = String
+		deleted;
+}
+creator.enum qml033945ea248045a5886ae58f305903e5 "Select Profile"
+	deleted
+{
+}
+creator.customaction qmla073b2f80ed64e758a886cb7b99f17c3 "Launch URL"
+	interfaces = [ qml2ed5bc86b28d48e89b832a10d6d45187
+	deleted ]
+	shortform = "LB"
+	direction = in
+	tokens = [ literal "URL launched successfully" ]
+	deleted
+{
+	creator.primitivefield qml10d2c74811f34ee7a87174de6260a47f "url"
+		type = String
 		deleted;
 }
 creator.enum qml8883a6d836be48558f95597687237b8c "createaccount_Enum (1)"
@@ -2334,17 +2409,20 @@ creator.enum qml8883a6d836be48558f95597687237b8c "createaccount_Enum (1)"
 	creator.enumerationvalue qml065a37edd2864c85b5b6f2cc2021a4dd "Administrator"
 		deleted;
 }
-creator.customaction qmlf42f209515e641d7872607c7101130cc "Wait"
-	interfaces = [ qml6906a09fc89f412cb22d9eae76487c0a
-	deleted ]
-	shortform = "WA"
-	direction = in
-	tokens = [ literal "This action waits for " reference
-qml0fb94deb6f9645beb5883f78e10bedfb literal " seconds" ]
+creator.enum qmlc2500941e95448c392248ab500ecb0bd "createaccount_Enum (1)"
 	deleted
 {
-	creator.primitivefield qml0fb94deb6f9645beb5883f78e10bedfb "seconds"
-		type = String
+	creator.enumerationvalue qml18417ded1b944ce6b085540b59dd12a1 "Reporter"
+		deleted;
+	creator.enumerationvalue qml3856debf449f4c4ab428f63b46b9083d "Updater"
+		deleted;
+	creator.enumerationvalue qml707ec4d3f0654902815877b4c5b9b994 "Developer"
+		deleted;
+	creator.enumerationvalue qml6501eb77ce764e9eb19812a541b47b12 "Manager"
+		deleted;
+	creator.enumerationvalue qml89ba436031fb49a7a95b1afbb1dffd58 "Viewer"
+		deleted;
+	creator.enumerationvalue qmlcb6727272ef64271b3650fd1a8f07a98 "Administrator"
 		deleted;
 }
 creator.customaction qmlc232edc4f8ce4dc390cea486df6bf29d "Wait"
@@ -2352,27 +2430,17 @@ creator.customaction qmlc232edc4f8ce4dc390cea486df6bf29d "Wait"
 	deleted
 {
 }
-creator.customaction qml645a858bf837423dabac77eadb86e378 "Wait"
-	interfaces = [ qml2ed5bc86b28d48e89b832a10d6d45187
-	deleted ]
-	shortform = "WA"
-	direction = in
-	tokens = [ literal "This custom action wait for " reference
-qml96f2f7f3709b4aa494cc18847568ec62 literal " seconds" ]
+creator.enum qml3a9c3641b50e455fa19b847cd6ad78d0 "View Status -DD"
 	deleted
 {
-	creator.primitivefield qml96f2f7f3709b4aa494cc18847568ec62 "seconds"
-		type = number
+	creator.enumerationvalue qml4bf9f7932b244d65a6986709edd45d47 "public"
+		deleted;
+	creator.enumerationvalue qmlbd30844886d84de3b2d78055f19dfff4 "private"
 		deleted;
 }
-creator.gui.screen qml3dfe493bee804558a3ea5593ea27a865 "Custom Actions"
-	deleted
-{
-}
-creator.enum qml033945ea248045a5886ae58f305903e5 "Select Profile"
-	deleted
-{
-}
+creator.externalinterface qml2ed5bc86b28d48e89b832a10d6d45187 "mantisbt"
+	direction = in
+	deleted;
 creator.datatable qml08333558bcdf4efc9d460ec1bfde6212 "unnamed"
 	deleted
 {

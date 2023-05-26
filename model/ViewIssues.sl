@@ -374,36 +374,7 @@ creator.gui.screen qml37e39f89d9304384a84114b63ab46f8a "Print Reports"
 		status = dontcare;
 	creator.gui.form qml8d99f5b38dbe4111a2fae1d0b996891c "Print Reports form"
 	{
-		creator.gui.hyperlink qml0134ee082c494097b6179e56bb2f6d65 "Attachments"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmlc47e81d7ac524335b066f155fff8ce3c "Status"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml42618a87ca164a1ea62528e17bf003b6 "P"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml6533856341a445cf8cf6154707ed8118 "Comments"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qmlad52f2872a274a04a374756049076f8b "Category"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmlabc3c5608e504da2826dcf2f2f84f717 "Summary"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qml7f9a5dc12cf54fa99809bd0565259ad2 "Updated date"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qmla740343442e24b88ae6c39adcaf6cc01 "ID"
-			status = dontcare
-			deleted;
-		creator.gui.labelwidget qml33d0d6d712ad4526bde03ea678a157aa "Severity"
-			status = dontcare
-			deleted;
-		creator.gui.hyperlink qml28abbadadaab4a0e8f9c854a82a0bae5 "P"
-			status = dontcare
-			deleted;
+		
 		creator.gui.hyperlink qml90aadfde990348b4804baecbdde0ddb1 "D"
 			status = dontcare;
 		creator.gui.hyperlink qmlbecf3fbb684d49d19248d2427f438217 "Comments"

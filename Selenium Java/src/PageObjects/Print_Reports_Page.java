@@ -36,88 +36,32 @@ public void verify_MantisBT___Demo_Status(String data){
 			}
 		}
 	}
-@FindBy(how= How.ID, using = "Attachments")
-	public static WebElement Attachments;
+@FindBy(how= How.ID, using = "D")
+	public static WebElement D;
 
-public void verify_Attachments_Status(String data){
-		//Verifies the Status of the Attachments
+public void verify_D_Status(String data){
+		//Verifies the Status of the D
 		if(!data.contentEquals("Dont care")){
 			switch(data){
 			case "ENABLED":
-				Assert.assertTrue(Attachments.isEnabled());
+				Assert.assertTrue(D.isEnabled());
 				break;
 			case "VISIBLE":
-				Assert.assertTrue(Attachments.isDisplayed());
+				Assert.assertTrue(D.isDisplayed());
 				break;
 			case "HIDDEN":
-				Assert.assertFalse(!Attachments.isDisplayed());
+				Assert.assertFalse(!D.isDisplayed());
 				break;
 			case "DISABLED":
-				Assert.assertFalse(!Attachments.isEnabled());
+				Assert.assertFalse(!D.isEnabled());
 				break;
 			default:
 				break;
 			}
 		}
 	}
-public void click_Attachments(){
-		Attachments.click();
-}
-
-@FindBy(how= How.ID, using = "Status")
-	public static WebElement Status;
-
-public void verify_Status_Status(String data){
-		//Verifies the Status of the Status
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(Status.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(Status.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!Status.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!Status.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void click_Status(){
-		Status.click();
-}
-
-@FindBy(how= How.ID, using = "P")
-	public static WebElement P;
-
-public void verify_P_Status(String data){
-		//Verifies the Status of the P
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(P.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(P.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!P.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!P.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void click_P(){
-		P.click();
+public void click_D(){
+		D.click();
 }
 
 @FindBy(how= How.ID, using = "Comments")
@@ -148,6 +92,34 @@ public void click_Comments(){
 		Comments.click();
 }
 
+@FindBy(how= How.ID, using = "Attachments")
+	public static WebElement Attachments;
+
+public void verify_Attachments_Status(String data){
+		//Verifies the Status of the Attachments
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Attachments.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Attachments.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Attachments.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Attachments.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Attachments(){
+		Attachments.click();
+}
+
 @FindBy(how= How.ID, using = "Category")
 	public static WebElement Category;
 
@@ -170,6 +142,90 @@ public void verify_Category_Status(String data){
 				break;
 			case "DISABLED":
 				Assert.assertFalse(!Category.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "Severity")
+	public static WebElement Severity;
+
+public void verify_Severity(String data){
+		Assert.assertEquals(Severity,Severity);
+}
+
+public void verify_Severity_Status(String data){
+		//Verifies the Status of the Severity
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Severity.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Severity.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Severity.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Severity.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+@FindBy(how= How.ID, using = "Status")
+	public static WebElement Status;
+
+public void verify_Status_Status(String data){
+		//Verifies the Status of the Status
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Status.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Status.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Status.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Status.isEnabled());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+public void click_Status(){
+		Status.click();
+}
+
+@FindBy(how= How.ID, using = "Updated_date")
+	public static WebElement Updated_date;
+
+public void verify_Updated_date(String data){
+		Assert.assertEquals(Updated_date,Updated_date);
+}
+
+public void verify_Updated_date_Status(String data){
+		//Verifies the Status of the Updated_date
+		if(!data.contentEquals("Dont care")){
+			switch(data){
+			case "ENABLED":
+				Assert.assertTrue(Updated_date.isEnabled());
+				break;
+			case "VISIBLE":
+				Assert.assertTrue(Updated_date.isDisplayed());
+				break;
+			case "HIDDEN":
+				Assert.assertFalse(!Updated_date.isDisplayed());
+				break;
+			case "DISABLED":
+				Assert.assertFalse(!Updated_date.isEnabled());
 				break;
 			default:
 				break;
@@ -202,118 +258,6 @@ public void verify_Summary_Status(String data){
 	}
 public void click_Summary(){
 		Summary.click();
-}
-
-@FindBy(how= How.ID, using = "Updated_date")
-	public static WebElement Updated_date;
-
-public void verify_Updated_date(String data){
-		Assert.assertEquals(Updated_date,Updated_date);
-}
-
-public void verify_Updated_date_Status(String data){
-		//Verifies the Status of the Updated_date
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(Updated_date.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(Updated_date.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!Updated_date.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!Updated_date.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-@FindBy(how= How.ID, using = "ID")
-	public static WebElement ID;
-
-public void verify_ID_Status(String data){
-		//Verifies the Status of the ID
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(ID.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(ID.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!ID.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!ID.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void click_ID(){
-		ID.click();
-}
-
-@FindBy(how= How.ID, using = "Severity")
-	public static WebElement Severity;
-
-public void verify_Severity(String data){
-		Assert.assertEquals(Severity,Severity);
-}
-
-public void verify_Severity_Status(String data){
-		//Verifies the Status of the Severity
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(Severity.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(Severity.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!Severity.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!Severity.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-@FindBy(how= How.ID, using = "D")
-	public static WebElement D;
-
-public void verify_D_Status(String data){
-		//Verifies the Status of the D
-		if(!data.contentEquals("Dont care")){
-			switch(data){
-			case "ENABLED":
-				Assert.assertTrue(D.isEnabled());
-				break;
-			case "VISIBLE":
-				Assert.assertTrue(D.isDisplayed());
-				break;
-			case "HIDDEN":
-				Assert.assertFalse(!D.isDisplayed());
-				break;
-			case "DISABLED":
-				Assert.assertFalse(!D.isEnabled());
-				break;
-			default:
-				break;
-			}
-		}
-	}
-public void click_D(){
-		D.click();
 }
 
 @FindBy(how= How.ID, using = "P")

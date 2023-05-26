@@ -1,5 +1,5 @@
 com.conformiq.creator.structure.v15
-creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
+creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "Manage_Screen"
 {
 	
 	creator.gui.tab qml578fdcda6b3246688760d83fc1ea6eaa "I tab"
@@ -86,12 +86,33 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			status = dontcare;
 		creator.gui.button qmldeb7d3ca2a00408982cb438a5a69dd09 "unused"
 			status = dontcare;
+		creator.gui.form qml2f55b43c0b144f59807597d034cab1b2 "CreateAccount"
+		{
+			creator.gui.textbox qml37a944d4f1a74e2aaf9c0f81d94a9b29 "CA_username"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml242262c39f254ae382897b9367442e33 "CA_realname"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qmlf50050e0d77749af9ead1dea228505d6 "CA_Email"
+				type = String
+				status = dontcare;
+			creator.gui.checkbox qmlbc17921a5c6345ce99b285a20f47db37 " CA_Enable"
+				status = dontcare
+				checked = dontcare;
+			creator.gui.checkbox qml1d7576d6bc2343e5815b2205dc914602 "CA_Protected"
+				status = dontcare
+				checked = dontcare;
+			creator.gui.dropdown qmle737529ca3404f42a603e47e697ef4e8 "AcessLevel_CA"
+				type = qml30d0ed1e0fd6457bae2349d60009bdd7
+				status = dontcare;
+			creator.gui.button qml46cee4f32d1c4ce0a74dfd4cd7e2f735 "Createuser_CA"
+				status = dontcare;
+		}
 	}
-
-
 	creator.gui.form qml18191262afc84e2b980014e70abba9dd "Manage accounts"
 		{
-			creator.gui.button qmle877a37d163b4a41b99f31cff1671e65 "Craete account"
+			creator.gui.button qmle877a37d163b4a41b99f31cff1671e65 "Craete account_Ma"
 				status = dontcare;
 			creator.gui.checkbox qml3dc38846d6f14213aaa3778aa8cf8415 "Hide Inactive"
 				status = dontcare
@@ -142,24 +163,24 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				status = dontcare;
 			creator.gui.hyperlink qmlb9fc0e9a6e1b4bfb8f65a8d025b88ccd "View Status HL"
 				status = dontcare;
-			creator.gui.button qml43955d863fc94c6faf1f0072e16f0be7 "Create Projects"
+			creator.gui.button qml43955d863fc94c6faf1f0072e16f0be7 "Create Projects_MP"
 			    annotations= ["selenium:XPATH" = "//button[normalize-space()='Create New Project']";]
 			    
 				status = dontcare;
 		}
 		creator.gui.form qml5681b100f353441d9330e2230a1dd8d9 "Global Categories"
 		{
-			creator.gui.button qml448a438468824105938f2d7204f8da54 "Edit"
+			creator.gui.button qml448a438468824105938f2d7204f8da54 "Edit_GC"
 				status = dontcare;
-			creator.gui.button qmlf606d7dbd5c544259532a34c6fe0be55 "Delete"
+			creator.gui.button qmlf606d7dbd5c544259532a34c6fe0be55 "Delete_GC"
 				status = dontcare;
 			creator.gui.textbox qml3ff8231df7e04f1eb3888eb7ab7cacf0 "Text global categories textbox"
 				type = String
 				status = dontcare;
-			creator.gui.button qml9d94653de40d4aa99bc3d93e4e36e10c "Add Category"
+			creator.gui.button qml9d94653de40d4aa99bc3d93e4e36e10c "Add Category_GC"
 				status = dontcare;
 			creator.gui.button qmlfa71b22e67104f06be336455978d4ba7
-			"Add and Edit Category"
+			"Add and Edit Category_GC"
 				status = dontcare;
 		}
 	}
@@ -175,7 +196,7 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 				status = dontcare;
 			creator.gui.hyperlink qml9679fbaa3f71442fa2377213eb641342 "Dont Care"
 				status = dontcare;
-			creator.gui.button qmledd4617466a74b19b60396c6abcd6b34 "Create Tags"
+			creator.gui.button qmledd4617466a74b19b60396c6abcd6b34 "Create Tags_T"
 				status = dontcare;
 			creator.gui.hyperlink qml0c4e1701b0e44079a56f22b139e0cf98 "Last Updated HL"
 				status = dontcare;
@@ -190,50 +211,28 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			creator.gui.textbox qmld40b444f3fd9401dad3b4650a37cd3fd "Tag Description"
 				type = String
 				status = dontcare;
-			creator.gui.button qml16339671c58045a5b40ca978b800d828 "Create Tags"
+			creator.gui.button qml16339671c58045a5b40ca978b800d828 "Create Tags_CT"
 				status = dontcare;
 		}
 		
 	}
 	creator.gui.form qml73a4bffcd656481f96f762d686ca5d49 "create new projects"
 	{
-		creator.gui.textbox qmla32db9e2bc4e439c847eafffff03f66d "projectnameTX"
+		creator.gui.textbox qmla32db9e2bc4e439c847eafffff03f66d "projectnameCNP"
 		    annotations= ["selenium:XPATH" = "//input[@id='project-name']";]
 		    
 			type = String
 			status = dontcare;
-		creator.gui.textbox qml62b4b2d07c594b7a9fc2b05d93d844bb "Description"
+		creator.gui.textbox qml62b4b2d07c594b7a9fc2b05d93d844bb "Description_CNP"
 		    annotations= ["selenium:XPATH" = "//textarea[@id='project-description']";]
 		    
 			type = String
 			status = dontcare;
-		creator.gui.button qml0a01cb5449a445a18e4ff8f68cf918e3 "Add project"
+		creator.gui.button qml0a01cb5449a445a18e4ff8f68cf918e3 "Add project_CNP"
 		    annotations= ["selenium:XPATH" = "//input[@value='Add Project']";]
 			status = dontcare;
 	}
-	creator.gui.form qml1ac151b8762e44678f3bbdf5d15d84ab "CreateAccount"
-	{
-		creator.gui.textbox qml3373cf53e34245c6817753233ab3909d "CA_username"
-			type = String
-			status = dontcare;
-		creator.gui.textbox qmlb305d76827344681a88e9ebbfc5049a6 "CA_realname"
-			type = String
-			status = dontcare;
-		creator.gui.textbox qmld23f8c81ec3e4144a50ec9b1aea83d39 "CA_Email"
-			type = String
-			status = dontcare;
-		
-		creator.gui.checkbox qml628fdb608b424e3080d9e1124acb02c9 " CA_Enable"
-			status = dontcare
-			checked = dontcare;
-		creator.gui.checkbox qml3f61284d55534cc3a2a223d1b26d97dd "CA_Protected"
-			status = dontcare
-			checked = dontcare;
-		creator.gui.dropdown qmla9f792804432407a895cef0ff478a245 "AcessLevel_CA"
-			type = qml30d0ed1e0fd6457bae2349d60009bdd7
-			status = dontcare;
-	}
-	creator.gui.tab qml4057c044559546b39c13028fa6a5ab94 "Manage Custom Fields"
+		creator.gui.tab qml4057c044559546b39c13028fa6a5ab94 "Manage Custom Fields"
 	{
 		
 		creator.gui.form qml94ab7f01746142e9a4d30b47f9cb8507 "Custom Fields"
@@ -322,7 +321,7 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 			"Required On Close"
 				status = dontcare
 				checked = dontcare;
-			creator.gui.button qml4dfd8cfa9a934ca28513c7d66985465a "UpdateCustomField"
+			creator.gui.button qml4dfd8cfa9a934ca28513c7d66985465a "UpdateCustomField_MCF"
 				status = dontcare;
 			
 		}
@@ -342,7 +341,45 @@ creator.gui.screen qml48a2f3de36f54d598091b741de28d2d5 "mantis screen"
 		creator.gui.button qml737e14a2a09f4d61ab87822650e0a0e1 "LinkCustomField"
 			status = dontcare;
 	}
-}
+	creator.gui.tab qml596ab7e7c7214798aa5b954e94e46cd6 "ManageGlobalCategories"
+	{
+		creator.gui.group qml85a34e5a210b4ead84b47e43e03a0f75 "Profile_MGC"
+		{
+			creator.gui.labelwidget qmlbff1ce0b13e3405183a320cbe39327a5 "Platform_p"
+				status = dontcare;
+			creator.gui.labelwidget qml44811fce5f0e4f4fb701af0503e5d432 "os_p"
+				status = dontcare;
+			creator.gui.labelwidget qmlf732965af4d34a60a88245596d5d0dea "Os version_P"
+				status = dontcare;
+		
+			}
+			creator.gui.labelwidget qml8b7d5c65d52040a29dff0108355a226c "Actions_P"
+				status = dontcare;
+			creator.gui.button qml75bb6975b23e423a9880d337bab9d60e "Edit_P"
+				status = dontcare;
+			creator.gui.button qml4f4f6c0c3d84460bba377a9929d99f5b "Delete_P"
+				status = dontcare;
+		creator.gui.form qml80d91da8df1f4dc19aba4294cc93b4b1 "Addprofile_MGC"
+		{
+			creator.gui.textbox qmlbc19eddfabaf4623a04526074274a726 "Platform_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml819dc0f185284b2986fb215cfcebc9cb "Os_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qmla0b190a5476e48c1b3bc3214f0d342ba "Os version_AP"
+				type = String
+				status = dontcare;
+			creator.gui.textbox qml5dcec329ebf6435c928009a0b07426c0
+			"System Description_AP"
+				type = String
+				status = dontcare;
+			creator.gui.button qml993eaae2310540dcad2e1bfde53f836a "Addprofile_AP"
+				status = dontcare;
+		}
+	}
+	}
+
 creator.enum qml30d0ed1e0fd6457bae2349d60009bdd7 "createaccount_Enum"
 {
 	creator.enumerationvalue qmlb47c4ccaa05e4eaba0587cff5f7ed548 "Reporter";
