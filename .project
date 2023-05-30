@@ -32,8 +32,8 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>com.conformiq.qtronic.client.nature</nature>
 		<nature>com.conformiq.creator.nature</nature>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>

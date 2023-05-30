@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
 encoding//model/CustomActions.sd=UTF-8
 encoding//model/CustomActions.sl=UTF-8
+encoding//model/EditProject.sd=UTF-8
+encoding//model/EditProject.sl=UTF-8
 encoding//model/HomePage.sd=UTF-8
 encoding//model/IssueSubmit.sd=UTF-8
 encoding//model/IssueSubmit.sl=UTF-8
